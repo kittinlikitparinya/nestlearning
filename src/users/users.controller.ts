@@ -14,7 +14,7 @@ constructor(private usersService:UsersService) {}
     }
 
 
-@Serialize(UserDto)
+@Serialize(UserDto )
 @Get('/:id')
 findUser(@Param('id') id: string){
     const intId = parseInt(id)
