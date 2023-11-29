@@ -1,0 +1,39 @@
+
+
+###
+
+POST http://localhost:3000/auth/signup
+content-type: application/json
+
+{
+    "email": "123@gmail.com",
+    "password": "111"
+}
+
+
+### Find id
+
+get http://localhost:3000/auth/5
+
+
+
+### find all user
+
+get http://localhost:3000/auth?email=123@gmail.com
+
+
+
+### Delete
+
+Delete http://localhost:3000/auth/1
+
+
+### Update
+
+PATCH http://localhost:3000/auth/2
+Content-Type: application/json
+
+{
+    "email" : "bbbb@gmail.com",
+    "password" : "yeeha"
+}
