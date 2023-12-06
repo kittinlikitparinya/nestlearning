@@ -1,13 +1,22 @@
 
 
-###
+### sign up
 
 POST http://localhost:3000/auth/signup
 content-type: application/json
 
 {
-    "email": "123@gmail.com",
+    "email": "xxx3@gmail.com",
     "password": "111"
+}
+### sign in
+
+POST http://localhost:3000/auth/signin
+content-type: application/json
+
+{
+    "email": "xxx3@gmail.com",
+    "password": "111111"
 }
 
 
@@ -22,6 +31,9 @@ get http://localhost:3000/auth/5
 get http://localhost:3000/auth?email=123@gmail.com
 
 
+### find all user
+
+get http://localhost:3000/auth/alluser
 
 ### Delete
 
@@ -37,3 +49,5 @@ Content-Type: application/json
     "email" : "bbbb@gmail.com",
     "password" : "yeeha"
 }
+
+
